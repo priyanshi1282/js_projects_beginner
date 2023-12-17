@@ -1,5 +1,5 @@
 // a string array storing values of color.
-const arr = ["red" , "pink" , "blue" ,"yellow","violet","purple","whitesmoke","cyan","brown","grey","green","orange","chocolate","silver"];
+const arr = ["coral","darkred" , "pink" , "navy" ,"yellow","violet","deeppink","purple","whitesmoke","cyan","brown","grey","green","orange","chocolate","silver"];
 
 // selecting the button element from document using query selector
 const btn = document.querySelector("#btn");
