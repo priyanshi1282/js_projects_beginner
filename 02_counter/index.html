@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+
+    <!-- main css link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main>
-        <h1>Counter</h1>
-        <h1>0</h1>
+    <main class="flex flex-col justify-center items-center h-screen">
+
+        <!-- heading -->
+        <h1 class="text-sky-700 heading text-5xl font-bold">Counter</h1>
+
+        <!-- counter value -->
+        <h1 class="font-bold text-7xl lg:text-9xl  my-8 lg:my-12" id="value">0</h1>
+
+        <!-- button row -->
         <div class="btn-row">
-            <button>+</button>
-            <button>Reset</button>
-            <button>-</button>
+
+            <!-- increament button -->
+            <button class="btn text-sky-900 font-medium rounded" id="up">+</button>
+
+            <!-- reset button -->
+            <button class="btn mx-8 text-sky-900 font-medium rounded" id="reset">Reset</button>
+
+            <!-- decreament button -->
+            <button class="btn text-sky-900 font-medium rounded" id="down">-</button>
         </div>
     </main>
+
+    <!-- main js link -->
     <script src="script.js"></script>
 </body>
 </html>
