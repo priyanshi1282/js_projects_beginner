@@ -9,22 +9,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main>
-        <h1>Our Reviews</h1>
-        <div class="card">
-            <div class="img-container w-40">
-                <div class="quotes">
-                    <i class="fa-solid fa-quote-right"></i>
+    <main class="flex flex-col justify-center items-center h-full tracking-wide">
+        <div class="heading my-5 md:my-10">
+            <h1 class="text-4xl lg:text-6xl">Our Reviews</h1>
+        <div class="line w-40 h-1 bg-sky-500 mx-auto my-1"></div>
+        </div>
+        <!-- card -->
+        <div class="card flex flex-col items-center shadow-inner bg-slate-100 p-5 lg:p-11 rounded-md w-10/12 md:w-8/12 text-center">
+            <div class="img-container relative mb-4">
+                <div class="quotes absolute w-8 h-8 md:w-12 md:h-12 bg-sky-500 flex justify-center items-center text-white rounded-full top-2 z-20">
+                    <i class="fa-solid fa-quote-right text-lg lg:text-2xl"></i>
                 </div>
-                <div class="img-bg"></div>
-                <div class="img"><img id="user-img" src="user1.jpeg" alt="client image"></div>
+                <!-- w-40 = 160px -->
+                <div class="img-bg rounded-full w-32 h-32 md:w-40 md:h-40 bg-sky-500 absolute left-2 bottom-1"></div>
+                <div class="img  w-32 md:w-40 relative z-10"><img class="rounded-full" id="user-img" src="user1.jpeg" alt="client image"></div>
             </div>
-            <h3 class="name" id="name">Priyanshi Agrawal</h3>
-            <p class="title" id="title">Web Developer</p>
-            <p class="review" id="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium. Autem accusamus nemo reprehenderit.</p>
-            <div class="btn-grp">
-                <button type="button" id="prev"><i class="fa-solid fa-angle-left"></i></button>
-                <button type="button" id="next"><i class="fa-solid fa-angle-right"></i></button>
+            <h3 class="name text-xl" id="name">Priyanshi Agrawal</h3>
+            <p class="title text-sky-500" id="title">Web Developer</p>
+            <p class="review text-sm md:text-base font-light" id="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium. Autem accusamus nemo reprehenderit.</p>
+            <div class="btn-grp text-sky-500 text-lg md:text-3xl mt-4">
+                <button type="button" id="prev"><i class="fa-solid fa-angle-left mr-2"></i></button>
+                <button type="button" id="next"><i class="fa-solid fa-angle-right ml-2"></i></button>
             </div>
         </div>
     </main>

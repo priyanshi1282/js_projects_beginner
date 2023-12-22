@@ -4,7 +4,7 @@ const users=[
         url:"user1.jpeg",
         name:"Priyanshi Agrawal",
         title:"Web Developer",
-        review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium. Autem accusamus nemo reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium. Autem accusamus nemo reprehenderit."
+        review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium. Autem accusamus nemo reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt in dolores repellendus aut natus accusantium."
     },
     { // user 2
         url:"user2.jpg",
@@ -22,7 +22,7 @@ const users=[
         url:"user4.jpeg",
         name:"Pranay Nagpure",
         title:"AI/ML Developer",
-        review:"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+        review:"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur."
     },
 ]
 
