@@ -12,3 +12,10 @@ Color Flipper lets you play with : array traversal, event listener, functions, D
 <p>
 Counter covers : querry selector, styles manipulaation, event listener, functions, DOM manipulation.
 </p>
+
+<h3>
+<a href="03_review_carousel/index.html">03. Review Carousel </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/03_review_carousel/index.html" target="_blank">[Live Demo!]</a>
+<p>
+Carousel uses : object array, fucntions, helper function, conditional statements, querry selector, event listener, DOM manipulation.
+</p>
