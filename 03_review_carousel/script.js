@@ -1,3 +1,7 @@
+// Author : Priyanshi Agrawal
+// Date : 22-12-2023
+// Title : Review Carousel
+
 // object array to store value of user reviews
 const users=[
     { // user 1

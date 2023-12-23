@@ -1,3 +1,7 @@
+// Author : Priyanshi Agrawal
+// Date : 17-12-2023
+// Title : Color Flipper
+
 // a string array storing values of color.
 const arr = ["coral","darkred" , "pink" , "navy" ,"yellow","violet","deeppink","purple","whitesmoke","cyan","brown","grey","green","orange","chocolate","silver"];
 

@@ -1,3 +1,7 @@
+// Author : Priyanshi Agrawal
+// Date : 19-12-2023
+// Title : Counter
+
 // increament btn
 const up= document.querySelector("#up");
 

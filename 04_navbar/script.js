@@ -1,3 +1,7 @@
+// Author : Priyanshi Agrawal
+// Date : 23-12-2023
+// Title : Responsive Navbar
+
 // get menu button and items element from document
 const menu= document.querySelector("#menu");
 const items= document.querySelector("#items");
