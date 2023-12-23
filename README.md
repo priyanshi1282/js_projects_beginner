@@ -19,3 +19,10 @@ Counter covers : querry selector, styles manipulaation, event listener, function
 <p>
 Carousel uses : object array, fucntions, helper function, conditional statements, querry selector, event listener, DOM manipulation.
 </p>
+
+<h3>
+<a href="04_navbar/index.html">04. Navbar </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/04_navbar/index.html" target="_blank">[Live Demo!]</a>
+<p>
+Navbar includes : class list function, toggle function, querry selector, event listener, DOM manipulation.
+</p>
