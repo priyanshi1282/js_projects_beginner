@@ -1,0 +1,16 @@
+#menu{
+    display: none;
+}
+
+/* mobile phones media query */
+@media only screen and (max-width : 768px) {
+    .nav-items{
+        display: none;
+    }
+    .nav-active{
+        display: flex;
+    }
+    #menu{
+        display: block;
+    }
+}

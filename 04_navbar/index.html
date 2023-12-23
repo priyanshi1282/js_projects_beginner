@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
+    <!-- main style sheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <nav class="flex justify-between py-4 px-8 bg-slate-200 flex-col md:flex-row tracking-widest">
+        <!-- nav header -->
+        <div class="nav-header flex justify-between w-full md:w-auto">
+            <!-- nav brand -->
+            <div class="nav-brand">
+                <h1 class="text-2xl font-bold">Coding <span class="text-sky-500">Addict</span></h1>
+            </div>
+            <button id="menu" type="button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- nav items -->
+        <div id="items" class="nav-items h-40 md:h-auto w-full md:w-1/5 md:flex flex-col md:flex-row justify-between md:items-center py-4 md:py-0">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">About</a>
+            <a href="#" class="link">Projects</a>
+            <a href="#" class="link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- script file main -->
     <script src="script.js"></script>
 </body>
 </html>
