@@ -26,3 +26,10 @@ Carousel uses : object array, fucntions, helper function, conditional statements
 <p>
 Navbar includes : class list function, toggle function, querry selector, event listener, DOM manipulation.
 </p>
+
+<h3>
+<a href="05_sidebar/index.html">05. Sidebar </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/05_sidebar/index.html" target="_blank">[Live Demo!]</a>
+<p>
+Sidebar deals with : class list add/remove, animations, postions, querry selector, event listener, DOM manipulation.
+</p>
