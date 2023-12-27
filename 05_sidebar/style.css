@@ -1,0 +1,29 @@
+@keyframes close-sidebar{
+    from{
+        left: 0;
+    }
+    to{
+        left: -400px;
+    }
+}
+
+.sidebar{
+    left: -400px;
+}
+
+.close{
+    animation: close-sidebar 1s ease forwards;
+}
+
+.active{
+    animation: open-sidebar 1s ease forwards;
+}
+
+@keyframes open-sidebar{
+    from{
+        left: -400px;
+    }
+    to{
+        left: 0;
+    }
+}
