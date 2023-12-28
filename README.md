@@ -31,5 +31,12 @@ Navbar includes : class list function, toggle function, querry selector, event l
 <a href="05_sidebar/index.html">05. Sidebar </a>
 </h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/05_sidebar/index.html" target="_blank">[Live Demo!]</a>
 <p>
-Sidebar deals with : class list add/remove, animations, postions, querry selector, event listener, DOM manipulation.
+Sidebar deals with : class list add/remove, animations, positions, querry selector, event listener, DOM manipulation.
+</p>
+
+<h3>
+<a href="06_modal/index.html">06. Modal </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/06_modal/index.html" target="_blank">[Live Demo!]</a>
+<p>
+Modal includes : class list add/remove, positions, querry selector, event listener, DOM manipulation.
 </p>
