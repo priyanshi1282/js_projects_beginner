@@ -10,17 +10,22 @@
     <!-- fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <main>
-        <div class="card">
-            <h1>Modal Project</h1>
-            <button id="open">Open Modal</button>
+<body class="h-screen text-center">
+    <main class="h-full flex justify-center items-center">
+        <div class="card bg-white p-4 rounded md:w-96 w-10/12 min-h-60 flex flex-col justify-evenly items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-orange-700">Modal Project</h1>
+            <button id="open" class="bg-orange-700 rounded px-3 py-1 text-white w-fit">Open Modal</button>
         </div>
     </main>
-    <div class="modal">
-        <div class="modal-card">
-            <button id="close"><i class="fa-solid fa-square-xmark"></i></button>
-            <p>Modal Body</p>
+    <div class="modal absolute top-0 z-50 h-full w-full justify-center items-center bg-yellow-900/30">
+        <div class="modal-card rounded bg-white p-5 relative md:w-7/12 w-10/12 min-h-72">
+            <button id="close" class="absolute top-2 right-4 text-2xl text-orange-700"><i class="fa-solid fa-square-xmark"></i></button>
+            <div class="modal-body">
+                <h1 class="text-xl md:text-2xl font-bold text-orange-700">Modal Title</h1>
+                <h4 class="text-gray-500 ">Sub heading</h4>
+                <p class="text-justify pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste enim id optio? Error ratione illo dolorum ipsum molestiae obcaecati officiis veritatis hic? Aliquam ipsum fuga temporibus quod enim, eos quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laborum placeat vel modi, quod enim accusantium minus est saepe ex voluptatibus corporis ut eveniet alias. Ad, porro alias. Quasi, voluptatum?</p>
+                <button class="bg-orange-700 rounded px-3 py-1 text-white w-fit mt-4">Call to Action</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
