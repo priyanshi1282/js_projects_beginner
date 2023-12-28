@@ -4,10 +4,12 @@ body{
     background-size: cover;
 }
 
+/* default, display will be none */
 .modal{
     display: none;
 }
 
+/* display only gets flex/block when active class is added */
 .active{
     display: flex;
 }
