@@ -1,3 +1,4 @@
+// array of objects which contain data of ques and ans
 const data = [
     {
         id: 1,
@@ -16,8 +17,15 @@ const data = [
     },
 ]
 
+// card container selected from document
+// we will map the array in this element
 const cardContainer = document.querySelector("#card-container");
 
+// this will map the array data in card container element in html
+// it will create card element for every array object (3 in our case)
+// we have also given unique id to each card element with the help of object's id value
+// join('') function will return the whole array elements as a string and join them with arrugemt passed to function i.e. empty string '' in our case
+// by default map will return elements will ',' seperated values, to avoid commans we used join() method
 cardContainer.innerHTML = data.map((item) => `
         <div id="card${item.id}" class="card bg-white shadow my-4 md:p-4 p-2">
         <div class="flex justify-between md:text-xl font-medium">
@@ -29,10 +37,13 @@ cardContainer.innerHTML = data.map((item) => `
     `
 ).join('');
 
-const card = document.querySelectorAll(".card");
+// selectnig the array of 'ans' and 'btn' elements from document
 const ans = document.querySelectorAll(".ans");
 const btn = document.querySelectorAll(".btn");
 
+// iterating the btn and ans array till the length of data array
+// adding event listiner to handle the click event on each button and responding to that event for each ans element respectivley
+// we have used toggle function to add and remove the "active" class from the "ans" element
 for(let i=0;i<data.length;i++)
 {
     btn[i].addEventListener("click", ()=>{
