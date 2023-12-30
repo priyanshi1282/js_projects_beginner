@@ -40,3 +40,10 @@ Sidebar deals with : class list add/remove, animations, positions, querry select
 <p>
 Modal includes : class list add/remove, positions, querry selector, event listener, DOM manipulation.
 </p>
+
+<h3>
+<a href="07_questions/index.html">07. Questions - FAQs </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/07_questions/index.html" target="_blank">[Live Demo!]</a>
+<p>
+questions covers : mapping, for loop, array object, inner html property, join function, class list toggle, querry selector all, event listener, DOM manipulation.
+</p>
