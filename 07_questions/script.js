@@ -1,3 +1,7 @@
+// Author : Priyanshi Agrawal
+// Date : 30-12-2023
+// Title : questions - FAQs
+
 // array of objects which contain data of ques and ans
 const data = [
     {
