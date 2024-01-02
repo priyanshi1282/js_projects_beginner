@@ -64,7 +64,7 @@ const menu = [
         item: "noodles with chilli oil eggs",
         price:"$22.55",
         info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus velit, possimus voluptates atque consequatur reiciendis!",
-        img:"Noddles-wth-chilli-oil-eggs.jpg",
+        img:"Noodles-with-chilli-oil-eggs.jpg",
         tag:"dinner"
     },
     {
@@ -116,3 +116,19 @@ const menu = [
         tag:"shakes"
     },
 ]
+
+const dishContainer = document.querySelector(".dish-container");
+dishContainer.innerHTML = menu.map((item)=>
+`
+<div class="card flex">
+<img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-500">
+<div class="card-info">
+    <div class="font-bold flex">
+        <h1 class="capitalize">${item.item}</h1>
+        <h1 class="text-yellow-500">${item.price}</h1>
+    </div>
+    <p>${item.info}</p>
+</div>
+</div>
+`
+)
