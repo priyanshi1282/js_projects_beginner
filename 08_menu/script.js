@@ -135,7 +135,7 @@ dishContainer.innerHTML = menu.map((item)=>`
     <p>${item.info}</p>
 </div>
 </div>`
-)
+).join(' ')
 
 function filterItems(tag){
     const filterArr= menu.filter(x=>
@@ -156,7 +156,7 @@ const displayItems = (...arr) =>{
                 <p>${item.info}</p>
             </div>
         </div>`
-)
+).join(' ');
 }
 
 all.addEventListener("click" , ()=>{
