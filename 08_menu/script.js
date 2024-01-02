@@ -118,10 +118,15 @@ const menu = [
 ]
 
 const dishContainer = document.querySelector(".dish-container");
-dishContainer.innerHTML = menu.map((item)=>
-`
+const all = document.querySelector("#all");
+const dinner = document.querySelector("#dinner");
+const lunch = document.querySelector("#lunch");
+const breakfast = document.querySelector("#breakfast");
+const shakes = document.querySelector("#shakes");
+
+dishContainer.innerHTML = menu.map((item)=>`
 <div class="card flex">
-<img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-500">
+<img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
 <div class="card-info">
     <div class="font-bold flex">
         <h1 class="capitalize">${item.item}</h1>
@@ -129,6 +134,76 @@ dishContainer.innerHTML = menu.map((item)=>
     </div>
     <p>${item.info}</p>
 </div>
-</div>
-`
+</div>`
 )
+
+function filterItems(tag){
+    const filterArr= menu.filter(x=>
+        x.tag==tag
+        )
+        return filterArr
+}
+
+const displayItems = (...arr) =>{
+    dishContainer.innerHTML = arr.map((item)=>`
+        <div class="card flex">
+            <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
+            <div class="card-info">
+                <div class="font-bold flex">
+                    <h1 class="capitalize">${item.item}</h1>
+                    <h1 class="text-yellow-500">${item.price}</h1>
+                </div>
+                <p>${item.info}</p>
+            </div>
+        </div>`
+)
+}
+
+all.addEventListener("click" , ()=>{
+    displayItems(...menu);
+    all.classList.add("active");
+    lunch.classList.remove("active")
+    dinner.classList.remove("active")
+    shakes.classList.remove("active")
+    breakfast.classList.remove("active")
+})
+
+dinner.addEventListener("click" , ()=>{
+    const dinnerItems = filterItems("dinner");
+    displayItems(...dinnerItems);
+    dinner.classList.add("active");
+    lunch.classList.remove("active")
+    all.classList.remove("active")
+    shakes.classList.remove("active")
+    breakfast.classList.remove("active")
+})
+
+lunch.addEventListener("click" , ()=>{
+    const dinnerItems = filterItems("lunch");
+    displayItems(...dinnerItems);
+    lunch.classList.add("active");
+    all.classList.remove("active")
+    dinner.classList.remove("active")
+    shakes.classList.remove("active")
+    breakfast.classList.remove("active")
+})
+
+shakes.addEventListener("click" , ()=>{
+    const dinnerItems = filterItems("shakes");
+    displayItems(...dinnerItems);
+    shakes.classList.add("active");
+    lunch.classList.remove("active")
+    dinner.classList.remove("active")
+    all.classList.remove("active")
+    breakfast.classList.remove("active")
+})
+
+breakfast.addEventListener("click" , ()=>{
+    const dinnerItems = filterItems("breakfast");
+    displayItems(...dinnerItems);
+    breakfast.classList.add("active");
+    lunch.classList.remove("active")
+    dinner.classList.remove("active")
+    shakes.classList.remove("active")
+    all.classList.remove("active")
+})
