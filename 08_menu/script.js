@@ -121,15 +121,15 @@ const dishContainer = document.querySelector(".dish-container");
 const buttons=document.querySelectorAll(".menu-btns button")
 
 dishContainer.innerHTML = menu.map((item)=>`
-<div class="card flex">
-<img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
-<div class="card-info">
-    <div class="font-bold flex">
-        <h1 class="capitalize">${item.item}</h1>
-        <h1 class="text-yellow-500">${item.price}</h1>
+<div class="card flex gap-4">
+    <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
+    <div class="card-info">
+        <div class="font-bold flex justify-between flex-wrap  border-b-[1px] border-slate-300 pb-1">
+            <h1 class="capitalize">${item.item}</h1>
+            <h1 class="text-yellow-500">${item.price}</h1>
+        </div>
+        <p class="text-slate-600 mt-1">${item.info}</p>
     </div>
-    <p>${item.info}</p>
-</div>
 </div>`
 ).join(' ')
 
@@ -142,16 +142,16 @@ function filterItems(tag){
 
 const displayItems = (...arr) =>{
     dishContainer.innerHTML = arr.map((item)=>`
-        <div class="card flex">
-            <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
-            <div class="card-info">
-                <div class="font-bold flex">
-                    <h1 class="capitalize">${item.item}</h1>
-                    <h1 class="text-yellow-500">${item.price}</h1>
-                </div>
-                <p>${item.info}</p>
-            </div>
-        </div>`
+    <div class="card flex gap-4">
+    <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
+    <div class="card-info">
+        <div class="font-bold flex justify-between flex-wrap  border-b-[1px] border-slate-300 pb-1">
+            <h1 class="capitalize">${item.item}</h1>
+            <h1 class="text-yellow-500">${item.price}</h1>
+        </div>
+        <p class="text-slate-600 mt-1">${item.info}</p>
+    </div>
+</div>`
 ).join(' ');
 }
 
