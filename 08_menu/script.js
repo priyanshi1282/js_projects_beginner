@@ -118,11 +118,7 @@ const menu = [
 ]
 
 const dishContainer = document.querySelector(".dish-container");
-const all = document.querySelector("#all");
-const dinner = document.querySelector("#dinner");
-const lunch = document.querySelector("#lunch");
-const breakfast = document.querySelector("#breakfast");
-const shakes = document.querySelector("#shakes");
+const buttons=document.querySelectorAll(".menu-btns button")
 
 dishContainer.innerHTML = menu.map((item)=>`
 <div class="card flex">
@@ -159,51 +155,70 @@ const displayItems = (...arr) =>{
 ).join(' ');
 }
 
-all.addEventListener("click" , ()=>{
-    displayItems(...menu);
-    all.classList.add("active");
-    lunch.classList.remove("active")
-    dinner.classList.remove("active")
-    shakes.classList.remove("active")
-    breakfast.classList.remove("active")
+buttons.forEach(button=>{
+    button.addEventListener("click",()=>{
+        buttons.forEach(btn => {btn.classList.remove("active")});
+        button.classList.add("active")
+
+        const tag = button.id==='all'? null:button.id;
+        const filteredItems = tag? filterItems(tag): menu;
+        displayItems(...filteredItems);
+    })
 })
 
-dinner.addEventListener("click" , ()=>{
-    const dinnerItems = filterItems("dinner");
-    displayItems(...dinnerItems);
-    dinner.classList.add("active");
-    lunch.classList.remove("active")
-    all.classList.remove("active")
-    shakes.classList.remove("active")
-    breakfast.classList.remove("active")
-})
+// below is the another method to handle clicks.
 
-lunch.addEventListener("click" , ()=>{
-    const dinnerItems = filterItems("lunch");
-    displayItems(...dinnerItems);
-    lunch.classList.add("active");
-    all.classList.remove("active")
-    dinner.classList.remove("active")
-    shakes.classList.remove("active")
-    breakfast.classList.remove("active")
-})
+// const all = document.querySelector("#all");
+// const dinner = document.querySelector("#dinner");
+// const lunch = document.querySelector("#lunch");
+// const breakfast = document.querySelector("#breakfast");
+// const shakes = document.querySelector("#shakes");
 
-shakes.addEventListener("click" , ()=>{
-    const dinnerItems = filterItems("shakes");
-    displayItems(...dinnerItems);
-    shakes.classList.add("active");
-    lunch.classList.remove("active")
-    dinner.classList.remove("active")
-    all.classList.remove("active")
-    breakfast.classList.remove("active")
-})
+// all.addEventListener("click" , ()=>{
+//     displayItems(...menu);
+//     all.classList.add("active");
+//     lunch.classList.remove("active")
+//     dinner.classList.remove("active")
+//     shakes.classList.remove("active")
+//     breakfast.classList.remove("active")
+// })
 
-breakfast.addEventListener("click" , ()=>{
-    const dinnerItems = filterItems("breakfast");
-    displayItems(...dinnerItems);
-    breakfast.classList.add("active");
-    lunch.classList.remove("active")
-    dinner.classList.remove("active")
-    shakes.classList.remove("active")
-    all.classList.remove("active")
-})
+// dinner.addEventListener("click" , ()=>{
+//     const dinnerItems = filterItems("dinner");
+//     displayItems(...dinnerItems);
+//     dinner.classList.add("active");
+//     lunch.classList.remove("active")
+//     all.classList.remove("active")
+//     shakes.classList.remove("active")
+//     breakfast.classList.remove("active")
+// })
+
+// lunch.addEventListener("click" , ()=>{
+//     const dinnerItems = filterItems("lunch");
+//     displayItems(...dinnerItems);
+//     lunch.classList.add("active");
+//     all.classList.remove("active")
+//     dinner.classList.remove("active")
+//     shakes.classList.remove("active")
+//     breakfast.classList.remove("active")
+// })
+
+// shakes.addEventListener("click" , ()=>{
+//     const dinnerItems = filterItems("shakes");
+//     displayItems(...dinnerItems);
+//     shakes.classList.add("active");
+//     lunch.classList.remove("active")
+//     dinner.classList.remove("active")
+//     all.classList.remove("active")
+//     breakfast.classList.remove("active")
+// })
+
+// breakfast.addEventListener("click" , ()=>{
+//     const dinnerItems = filterItems("breakfast");
+//     displayItems(...dinnerItems);
+//     breakfast.classList.add("active");
+//     lunch.classList.remove("active")
+//     dinner.classList.remove("active")
+//     shakes.classList.remove("active")
+//     all.classList.remove("active")
+// })
