@@ -118,7 +118,7 @@ const menu = [
 ]
 
 const dishContainer = document.querySelector(".dish-container");
-const buttons=document.querySelectorAll(".menu-btns button")
+const buttons=document.querySelectorAll(".menu-btns button");
 
 dishContainer.innerHTML = menu.map((item)=>`
 <div class="card flex flex-col sm:flex-row gap-4">

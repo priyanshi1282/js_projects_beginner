@@ -47,3 +47,10 @@ Modal includes : class list add/remove, positions, querry selector, event listen
 <p>
 questions covers : mapping, for loop, array object, inner html property, join function, class list toggle, querry selector all, event listener, DOM manipulation.
 </p>
+
+<h3>
+<a href="08_menu/index.html">08. Menu </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/08_menu/index.html" target="_blank">[Live Demo!]</a>
+<p>
+menu playes with : mapping, ternary operator, spread operator, array passing in function, functions, foreach loop, array object, inner html property, join method, class list toggle, querry selector all, event listener, DOM manipulation.
+</p>
