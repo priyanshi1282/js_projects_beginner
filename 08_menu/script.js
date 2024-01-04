@@ -2,6 +2,7 @@
 // Date : 31-12-2023
 // Title : Menu page - filter items
 
+// array of objects for menu items info
 const menu = [
     {
         id: 1,
@@ -117,9 +118,11 @@ const menu = [
     },
 ]
 
+// getting elements from document
 const dishContainer = document.querySelector(".dish-container");
 const buttons=document.querySelectorAll(".menu-btns button");
 
+// initially displays the mapped array on website (when website is first loaded)
 dishContainer.innerHTML = menu.map((item)=>`
 <div class="card flex flex-col sm:flex-row gap-4">
     <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
@@ -133,6 +136,8 @@ dishContainer.innerHTML = menu.map((item)=>`
 </div>`
 ).join(' ')
 
+// this function will filter items from menu array according to their tag type and will return the filter items array
+// we have used filter method to achieve this functionality
 function filterItems(tag){
     const filterArr= menu.filter(x=>
         x.tag==tag
@@ -140,6 +145,8 @@ function filterItems(tag){
         return filterArr
 }
 
+// this function will display the mapped items
+// array 'arr' argument is passed which is mapped
 const displayItems = (...arr) =>{
     dishContainer.innerHTML = arr.map((item)=>`
     <div class="card flex flex-col sm:flex-row gap-4">
@@ -155,6 +162,12 @@ const displayItems = (...arr) =>{
 ).join(' ');
 }
 
+// iterating all menu buttons
+// handling click event
+// removing "active" class from all buttons and adding "active" class to clicked button
+// if button id=="all" ,  means we want original menu array with all items present in it without any filter
+// passing the tag to filteritems and receiving the required filter array
+// at the end, calling displayitems() method to display desired array
 buttons.forEach(button=>{
     button.addEventListener("click",()=>{
         buttons.forEach(btn => {btn.classList.remove("active")});
