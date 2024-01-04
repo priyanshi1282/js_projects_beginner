@@ -121,7 +121,7 @@ const dishContainer = document.querySelector(".dish-container");
 const buttons=document.querySelectorAll(".menu-btns button")
 
 dishContainer.innerHTML = menu.map((item)=>`
-<div class="card flex gap-4">
+<div class="card flex flex-col sm:flex-row gap-4">
     <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
     <div class="card-info">
         <div class="font-bold flex justify-between flex-wrap  border-b-[1px] border-slate-300 pb-1">
@@ -142,7 +142,7 @@ function filterItems(tag){
 
 const displayItems = (...arr) =>{
     dishContainer.innerHTML = arr.map((item)=>`
-    <div class="card flex gap-4">
+    <div class="card flex flex-col sm:flex-row gap-4">
     <img src=${item.img} alt="" class="w-[120px] rounded border-4 border-yellow-600">
     <div class="card-info">
         <div class="font-bold flex justify-between flex-wrap  border-b-[1px] border-slate-300 pb-1">
