@@ -17,5 +17,5 @@
 /* animation from right to left */
 @keyframes animateback{
     from{right: 0;}
-    to{right: 112px;}
+    to{right: 118px;}
 }
