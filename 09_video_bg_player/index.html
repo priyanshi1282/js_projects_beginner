@@ -13,15 +13,19 @@
 </head>
 <body class="h-screen overflow-hidden">
     <main class="h-full relative">
-        <video id="video" autoplay class="absolute top-0">
+        <video id="video" autoplay class="absolute top-0 h-full w-full object-cover">
             <source src="video.mp4">
         </video>
-        <div class="absolute top-0 z-10">
-            <div class="bg-white w-32 flex relative controls">
-                <button id="play" class="flex-1 bg-pink-300">Play</button>
-                <button id="pause" class="flex-1 bg-pink-600">Pause</button>
-                <div id="cover" class="cover absolute w-16 h-full bg-sky-400"></div>
+        <div class="absolute z-10 h-full w-full bg-black/50 flex justify-center items-center">
+            <h1 class="text-white text-5xl font-bold">Video Project</h1>
+            <div class="absolute bottom-8 left-8">
+                <div class="bg-white text-sky-500  flex gap-2 relative controls rounded border-2 border-sky-500 p-1">
+                    <button id="play" class="flex-1 rounded px-8 py-2 border-2 border-sky-500">Play</button>
+                    <button id="pause" class="flex-1 rounded px-8 py-2 border-2 border-sky-500">Pause</button>
+                    <div id="cover" class="rounded cover top-0 px-8 py-2 absolute w-[6.3rem] h-full bg-sky-400"></div>
+                </div>
             </div>
+            
         </div>
     </main>
     <!-- main js file -->
