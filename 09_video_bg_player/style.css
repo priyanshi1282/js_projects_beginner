@@ -6,20 +6,11 @@
 }
 
 @keyframes animate{
-    from{
-        right: 7.5rem;
-    }
-    to{
-        right: 0;
-        width: 7rem;
-    }
+    from{right: 7.5rem;}
+    to{right: 0;width: 7rem;}
 }
 
 @keyframes animateback{
-    from{
-        right: 0;
-    }
-    to{
-        right: 7.5rem;
-    }
+    from{right: 0;}
+    to{right: 7.5rem;}
 }

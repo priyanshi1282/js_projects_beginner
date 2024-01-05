@@ -13,12 +13,12 @@
 </head>
 <body class="h-screen overflow-hidden">
     <main class="h-full relative">
-        <video id="video" autoplay class="absolute top-0 h-full w-full object-cover">
+        <video id="video" autoplay loop class="absolute top-0 h-full w-full object-cover">
             <source src="video.mp4">
         </video>
-        <div class="absolute z-10 h-full w-full bg-black/50 flex justify-center items-center">
-            <h1 class="text-white text-5xl font-bold">Video Project</h1>
-            <div class="absolute bottom-8 left-8">
+        <div class="absolute z-10 h-full w-full bg-black/50 flex flex-col gap-8 justify-center items-center">
+            <h1 class="text-white text-3xl md:text-5xl font-bold">Video Project</h1>
+            <div class="md:absolute md:bottom-8 md:left-8">
                 <div class="bg-white text-sky-500  flex gap-2 relative controls rounded border-2 border-sky-500 p-1">
                     <button id="play" class="flex-1 rounded px-8 py-2 border-2 border-sky-500">Play</button>
                     <button id="pause" class="flex-1 rounded px-8 py-2 border-2 border-sky-500">Pause</button>
