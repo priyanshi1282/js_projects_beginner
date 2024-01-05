@@ -1,15 +1,20 @@
+/* covers play btn */
 .cover{
     animation: animateback 0.5s ease-in-out forwards;
 }
+
+/* covers pause btn */
 .active{
     animation: animate 0.5s ease-in-out forwards;
 }
 
+/* animation from left to right */
 @keyframes animate{
     from{right: 7.5rem;}
     to{right: 0;width: 7rem;}
 }
 
+/* animation from right to left */
 @keyframes animateback{
     from{right: 0;}
     to{right: 7.5rem;}
