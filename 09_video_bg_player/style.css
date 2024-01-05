@@ -1,0 +1,25 @@
+.cover{
+    animation: animateback 0.5s ease-in-out forwards;
+}
+.active{
+    animation: animate 0.5s ease-in-out forwards;
+    /* right: 0; */
+}
+
+@keyframes animate{
+    from{
+        right: 4rem;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes animateback{
+    from{
+        right: 0;
+    }
+    to{
+        right: 4rem;
+    }
+}
