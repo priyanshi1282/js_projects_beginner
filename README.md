@@ -54,3 +54,10 @@ questions covers : mapping, for loop, array object, inner html property, join fu
 <p>
 menu playes with : mapping, ternary operator, spread operator, array passing in function, functions, foreach loop, array object, inner html property, join method, class list toggle, querry selector all, event listener, DOM manipulation.
 </p>
+
+<h3>
+<a href="09_video_bg_player/index.html">09. Video Player </a>
+</h3> <a href="https://priyanshi1282.github.io/js_projects_beginner/09_video_bg_player/index.html" target="_blank">[Live Demo!]</a>
+<p>
+video player implements : video play()/pause() method, video tag, autoplay/loop attributes, foreach loop, class list property, css animation, position, querry selector all, event listener, DOM manipulation.
+</p>
