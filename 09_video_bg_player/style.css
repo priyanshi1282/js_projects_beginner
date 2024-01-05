@@ -10,12 +10,12 @@
 
 /* animation from left to right */
 @keyframes animate{
-    from{right: 7.5rem;}
-    to{right: 0;width: 7rem;}
+    from{right: 120px;}
+    to{right: 0;width: 112px;}
 }
 
 /* animation from right to left */
 @keyframes animateback{
     from{right: 0;}
-    to{right: 7.5rem;}
+    to{right: 120px;}
 }
